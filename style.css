@@ -1,0 +1,326 @@
+/* Google Fonts - Dm Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+/* Google Fonts - Bree Serif */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+:root {
+    --text-color: #02073E;
+    --main-color: #F94962;
+    --secondary-color: #0f2137;
+    --default-white: #fff;
+    --font-bree-serif: 'Bree Serif', serif;
+    --font-dm-sans: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Navbar  */
+.navbar {
+    display: flex;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+li a {
+    position: relative;
+    font-family: var(--font-dm-sans);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+
+li a:hover:after {
+    width: 100%;
+}
+
+.icon-x {
+    display: none !important;
+}
+
+
+.btn-gt a:hover:after {
+    width: 100%;
+    display: none;
+}
+
+.btn-gt {
+    position: relative;
+}
+
+.path {
+    position: absolute;
+    bottom: -7px;
+    left: 5px;
+}
+
+/* Navbar End */
+
+/* Hero St */
+.hero {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.h-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.h-left h1 {
+    font: 400 60px/80px var(--font-bree-serif);
+    color: var(--text-color);
+}
+
+.h-left p {
+    font: 700 18px/42px var(--font-dm-sans);
+}
+
+.sucribe-g {
+    display: flex;
+    gap: 15px;
+}
+
+.sucribe-g input {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #d4dae2;
+    border-width: 1px;
+    padding: 9px 24px;
+    font: 700 18px/40px var(--font-dm-sans);
+    outline: none;
+    color: var(--text-color);
+}
+
+.sucribe-g input::placeholder {
+    color: var(--secondary-color);
+}
+
+.sucribe-g input:focus {
+    border-color: var(--main-color);
+    border-width: 1.8px;
+}
+
+.btn {
+    text-align: center;
+    font: 700 20px/40px var(--font-dm-sans);
+    outline: none;
+    color: var(--default-white);
+    border: none;
+    background-color: var(--main-color);
+    padding: 9px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s all;
+    border: 2px solid var(--main-color);
+}
+
+.btn:hover {
+    color: var(--main-color);
+    background-color: var(--default-white);
+    border: 2px solid var(--main-color);
+}
+
+.sponserd {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.sponserd p {
+    color: #566272;
+}
+
+.sponserd-logo {
+    display: flex;
+    gap: 28px;
+}
+
+.sponserd img {
+    height: 28px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+    cursor: pointer;
+}
+
+.sponserd img:hover {
+    filter: grayscale(0%);
+}
+
+
+.h-right {
+    width: 50%;
+}
+
+.h-right img {
+    width: 100%;
+}
+
+/* Hero End */
+
+/* features St */
+.title h2{
+    text-align: center;
+    font: 400 40px/50px var(--font-bree-serif);
+}
+
+.title p{
+    font: 400 17px/35px 'DM Sans', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-group{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.card h6{
+    font: 500 18px var(--font-dm-sans);
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.card p{
+    font: 400 16px/30px var(--font-dm-sans);
+color: #02073E;
+}
+
+/* features End */
+
+@media screen and (max-width:800px) {
+
+    /* Navbar St */
+    .icon-x {
+        color: var(--secondary-color);
+        font-size: 28px;
+        cursor: pointer;
+        margin-left: 25px;
+        display: block !important;
+    }
+
+    .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 0px;
+        padding-top: 20px;
+        background: var(--default-white);
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        z-index: 2;
+        transition: right 0.5s;
+        box-shadow: 0px 6px 12px 0px rgba(171, 190, 209, 0.30);
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    /* Navbar End */
+
+    /* Hero St */
+    .hero {
+        flex-direction: column-reverse;
+        gap: 0px;
+        margin-top: 10px;
+    }
+
+    .h-left {
+        width: 100%;
+    }
+
+    .h-right {
+        width: 100%;
+    }
+
+    .h-left h1 {
+        font: 400 40px var(--font-bree-serif);
+    }
+
+    .h-left p {
+        font: 600 17px var(--font-dm-sans);
+    }
+
+    .sponserd-logo {
+        gap: 10px;
+    }
+
+    .sponserd {
+        gap: 12px;
+
+    }
+
+    .sponserd img {
+        height: 19px;
+    }
+
+    .btn {
+        font: 600 17px/29px var(--font-dm-sans);
+        padding: 6px 16px;
+    }
+
+    .sucribe-g input {
+        font: 600 17px/29px var(--font-dm-sans);
+        padding: 6px 16px;
+    }
+
+    .sucribe-g {
+        gap: 5px;
+    }
+
+    /* Hero End */
+}

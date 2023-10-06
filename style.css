@@ -325,6 +325,7 @@ color: #02073E;
     .sucribe-g input {
         font: 600 17px/29px var(--font-dm-sans);
         padding: 6px 16px;
+        width: 90%;
     }
 
     .sucribe-g {

@@ -366,6 +366,15 @@ li a:hover:after {
 
 /* feedback End */
 
+/* how its work Section St */
+.work {
+    background-color: var(--backface-color);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* how its work Section End */
+
 
 @media screen and (max-width:800px) {
 
@@ -524,7 +533,7 @@ li a:hover:after {
     }
 
     /* customer  end*/
-    
+
     /* feedback St */
     .image img {
         width: 100%;

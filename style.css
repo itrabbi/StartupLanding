@@ -10,6 +10,7 @@
     --main-color: #F94962;
     --secondary-color: #0f2137;
     --default-white: #fff;
+    --backface-color: #F9FAFC;
     --font-bree-serif: 'Bree Serif', serif;
     --font-dm-sans: 'DM Sans', sans-serif;
 }
@@ -196,52 +197,124 @@ li a:hover:after {
 /* Hero End */
 
 /* features St */
-.title{
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title div{
+.title div {
     max-width: 50%;
 }
 
-.title h2{
+.title h2 {
     text-align: center;
     font: 400 40px/50px var(--font-bree-serif);
 }
 
-.title p{
-    font: 400 17px/35px 'DM Sans', sans-serif;
+.title p {
+    font: 400 17px/35px var(--font-dm-sans);
     text-align: center;
     margin-top: 10px;
 }
 
-.card-group{
+.card-group {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.card{
+.card {
     display: flex;
     gap: 30px;
     align-items: flex-start;
 }
 
-.card h6{
+.card h6 {
     font: 500 18px var(--font-dm-sans);
     margin-bottom: 15px;
     color: var(--secondary-color);
 }
 
-.card p{
+.card p {
     font: 400 16px/30px var(--font-dm-sans);
-color: #02073E;
+    color: #02073E;
 }
+
 /* features End */
+
+/* business St */
+.business-profitable {
+    background-color: var(--backface-color);
+    padding: 100px 0px;
+}
+
+.business {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.b-left {
+    width: 50%;
+}
+
+.b-left img {
+    width: 100%;
+}
+
+.b-right {
+    width: 50%;
+}
+
+.b-right .titles h2 {
+    font: 400 40px/50px var(--font-bree-serif);
+}
+
+.b-right .titles p {
+    font: 400 17px/35px var(--font-dm-sans);
+    margin-top: 20px;
+}
+
+.business-card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.business-card p {
+    font-size: 16px;
+    font-family: var(--font-dm-sans);
+    color: var(--text-color);
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.business-card i {
+    color: #3FDBB1;
+    font-size: 19px;
+}
+
+.button-icon {
+    outline: none;
+    border: none;
+    background: none;
+    color: #3183FF;
+    font-family: var(--font-dm-sans);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* business End */
 
 @media screen and (max-width:800px) {
 
@@ -331,23 +404,43 @@ color: #02073E;
     .sucribe-g {
         gap: 5px;
     }
+
     /* Hero End */
 
     /* features St */
-    .card-group{
-        grid-template-columns: repeat(1,1fr);
+    .card-group {
+        grid-template-columns: repeat(1, 1fr);
         margin-top: 30px;
     }
-    .title div{
+
+    .title div {
         max-width: 100%;
     }
-    
+
     .title h2 {
         text-align: left;
         font: 400 30px/50px var(--font-bree-serif);
     }
-    .title p{
+
+    .title p {
         text-align: left;
-        font: 400 17px/28px 'DM Sans', sans-serif;
+        font: 400 17px/28px var(--font-dm-sans);
     }
+
+    /* features End */
+
+    /* business St  */
+    .business {
+        flex-direction: column;
+    }
+
+    .b-left {
+        width: 100%;
+    }
+
+    .b-right {
+        width: 100%;
+    }
+
+    /* business End  */
 }

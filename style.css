@@ -348,7 +348,23 @@ li a:hover:after {
     font: 400 17px/35px var(--font-dm-sans);
     margin-top: 20px;
 }
-/* .customer end */ 
+
+/* .customer end */
+
+/* feedback St */
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.image img {
+    width: 60%;
+}
+
+/* feedback End */
 
 
 @media screen and (max-width:800px) {
@@ -508,4 +524,11 @@ li a:hover:after {
     }
 
     /* customer  end*/
+    
+    /* feedback St */
+    .image img {
+        width: 100%;
+    }
+
+    /* feedback end */
 }

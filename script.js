@@ -7,3 +7,4 @@ function closemenu() {
     resMobile.style.right = "-250px";
     resMobile.style.display = "visble";
 }
+

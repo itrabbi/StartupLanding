@@ -316,6 +316,41 @@ li a:hover:after {
 
 /* business End */
 
+/* .customer St */
+.customers {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.customer-flex {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.c-right {
+    width: 50%;
+}
+
+.c-right img {
+    width: 100%;
+}
+
+.c-left {
+    width: 50%;
+}
+
+.c-left .titles h2 {
+    font: 400 40px/50px var(--font-bree-serif);
+}
+
+.c-left .titles p {
+    font: 400 17px/35px var(--font-dm-sans);
+    margin-top: 20px;
+}
+/* .customer end */ 
+
+
 @media screen and (max-width:800px) {
 
     /* Navbar St */
@@ -442,5 +477,35 @@ li a:hover:after {
         width: 100%;
     }
 
+    .b-right .titles h2 {
+        font: 400 30px/50px var(--font-bree-serif);
+    }
+
+    .b-right .titles p {
+        font: 400 17px/28px var(--font-dm-sans);
+    }
+
     /* business End  */
+    /* customer  st*/
+    .customer-flex {
+        flex-direction: column-reverse;
+    }
+
+    .c-left {
+        width: 100%;
+    }
+
+    .c-right {
+        width: 100%;
+    }
+
+    .c-left .titles h2 {
+        font: 400 30px/50px var(--font-bree-serif);
+    }
+
+    .c-right .titles p {
+        font: 400 17px/28px var(--font-dm-sans);
+    }
+
+    /* customer  end*/
 }
